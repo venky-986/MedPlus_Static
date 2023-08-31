@@ -1,0 +1,12 @@
+runtime: python37
+default_expiration: '2s'
+
+handlers:
+- url: /
+  static_files:  MedPlus_Static/index.html
+  upload:  MedPlus_Static/index.html
+  expiration: '2s'
+
+- url: /
+  static_dir:  MedPlus_Static/index.html
+  expiration: '2s'
